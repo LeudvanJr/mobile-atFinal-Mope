@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Mope</string>
+    <string name="pesquisar">Pesquisar Endereço...</string>
+    <string name="add_parada">Adicionar Parada Pessoal</string>
+    <string name="add_tipo_parada">Adicionar Tipo de Parada</string>
+    <string name="id">Identificador...</string>
+
+    <string name="nome_parada">Nome da Parada...</string>
+    <string name="endereco_parada">Endereço da Parada...</string>
+    <string name="tipo_parada">Tipo da Parada...</string>
+
+    <string name="nome_tipo_parada">Nome do Tipo de Parada...</string>
+    <string name="descricao_tipo_parada">Descrição(breve) do Tipo...</string>
+    <string name="matiz">Matiz do Tipo</string>
+
+    <string name="adicionar">Adicionar</string>
+    <string name="Remover">Remover</string>
+    <string name="Atualizar">Atualizar</string>
+
+    <!-- ERROS-->
+    <string name="localizacao_precisa_necessaria">Para esse recurso, a Localização Precisa é necessária</string>
+    <string name="ativar_localizacao">Você precisa ativar a sua localização.</string>
+    <string name="preencher_campos">Preencha os campos Corretamente!</string>
+    <string name="falha_iniciar_places_api">Falha ao iniciar a API Places</string>
+    <string name="lugar_nao_encontrado">O endereço não foi localizado</string>
+    <string name="parada_nao_encontrada">A Parada não foi encontrada</string>
+    <string name="sem_internet">Verifique sua conexão com a internet</string>
+    <string name="sql_erro_insercao">Ocorreu um erro ao inserir no Banco de Dados</string>
+    <string name="sql_erro_atualizacao">Ocorreu um erro atualizar no Banco de Dados</string>
+    <string name="sql_erro_exclusao">Ocorreu um erro ao deletar do Banco de Dados</string>
+    <string name="sql_erro_selecao">Ocorreu um erro ao buscar do Banco de Dados</string>
+</resources>

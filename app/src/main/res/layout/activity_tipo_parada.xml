@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipoParadaActivity">
+
+    <EditText
+        android:id="@+id/etIdTipoParada"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btnEncontrarTipo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:drawableBottom="@drawable/search_icon_24"
+        android:paddingBottom="8dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/etNomeTipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toEndOf="@+id/etIdTipoParada"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etNomeTipo"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/nome_tipo_parada"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/etDescricaoTipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIdTipoParada"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/etDescricaoTipo"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/descricao_tipo_parada"
+        android:inputType="textAutoComplete"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btnAdicionarTipo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:drawableBottom="@drawable/baseline_add_24"
+        android:paddingBottom="8dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnAtualizarTipo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:drawableBottom="@drawable/baseline_update_24"
+        android:paddingBottom="8dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdicionarTipo"
+        app:layout_constraintTop_toTopOf="@+id/btnAdicionarTipo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnRemoverTipo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        android:drawableBottom="@drawable/baseline_delete_24"
+        android:paddingBottom="8dp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnAtualizarTipo"
+        app:layout_constraintTop_toTopOf="@+id/btnAtualizarTipo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="176dp"
+        android:max="259"
+        android:min="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etIdTipoParada"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnTesteCor"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:clickable="false"
+        android:text="Button"
+        app:cornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
